@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>
+          Coder Forge - Ajax Autocomplete
+      </title>
+      <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    </head>
+    <body>
+
+      <div class="container">
+
+        <!-- Static navbar -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Coder Forge - Aajax Autocomplete</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <input type="text" name="search" id="search" placeholder="Search for county..."/>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron">
+          <p>
+            In a nutshell, this is what we are hoping to accomplish here...
+            <ol>
+              <li>Using favourite mocking framework (bootstrap in this case)</li>
+              <li>skin up quick gui and some dummy server data</li>
+            </ol>
+          </p>
+        </div>
+
+        <div class="jumbotron">
+          <p>
+          Notice the bower.json file. This is a package manager for the front
+          end. We can use it to quickly install jquery &amp; bootstrap so we
+          can start prototyping asap.
+          </p>
+          <ul>
+            <li>HTML sourced from here: https://getbootstrap.com/examples/navbar/</li>
+            <li>`bower install --save jquery`</li>
+            <li>`bower install --save bootstrap`</li>
+          </ul>
+        </div>
+
+      </div> <!-- /container -->
+
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    </body>
+</html>
