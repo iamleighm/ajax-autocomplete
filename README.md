@@ -39,7 +39,32 @@ The code that will run our server goes into `app/`.
 ├── app                   // holds all our code
 │   ├── app.js            // our main application
 │   ├── public            // the front end root
-│   │   └── sample.json   // http://localhost:3000/sample.json
+│   │   └── sample.json   // json endpoint. Get http://localhost:3000/sample.json
 │   └── views             // view files
 │       └── index.jade    // jade compiles/turns these into html
+```
+
+# 4 - Run server
+
+Run:
+```bash
+$ npm install
+$ npm start
+```
+
+The server is accessible from [http://localhost:3000](http://localhost:3000)
+
+The first command will run the `scripts.start` field in the [package.json, in this case calling `nodemon ./app/app.js`
+file](https://github.com/coder-forge/ajax-autocomplete/blob/l1-setup-quick-sandbox/package.json#L6).
+
+```json
+{
+  "name": "ajax-autocomplete",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "nodemon ./app/app.js",
+    "postinstall": "bower install"
+  }
+  ...
 ```
