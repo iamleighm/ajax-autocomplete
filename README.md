@@ -36,10 +36,10 @@ end packages, ie jquery and bootstrap.
 The code that will run our server goes into `app/`.
 
 ```bash
-├── app
-│   ├── app.js
-│   ├── public
-│   │   └── sample.json
-│   └── views
-│       └── index.jade
+├── app                   // holds all our code
+│   ├── app.js            // our main application
+│   ├── public            // the front end root
+│   │   └── sample.json   // http://localhost:3000/sample.json
+│   └── views             // view files
+│       └── index.jade    // jade compiles/turns these into html
 ```
