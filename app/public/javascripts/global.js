@@ -9,7 +9,17 @@ $(document).ready(function documentIsReadyCallback(){
     var $el = $(this),                                                          // $(this) represnets the element the event happend to, in this case input#searchBox
       val = $(this).val();                                                      // get the inputs val
 
-    console.log(val);
+    // send value to server
+    // $.get( string url, object params, function callback )
+    $.get(
+      '/sample.json',                                                           // the target endpoing
+      {
+        query: val                                                              // add value as a query param to the server
+      },
+      function responseCallback(json, status, xhr){
+        console.log(status, json)                                               // handle our response
+      }
+    )
   });
 
   // samples of other events we can listen to
