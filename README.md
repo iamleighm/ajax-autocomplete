@@ -4,10 +4,10 @@ Search for strings, parse response and add to search input as an autocomplete dr
 
 Lessons are split into branches
 
- - Lesson 1: l1-setup-quick-sandbox
- - Lesson 2: l2-listen-request
- - Lesson 3: l3-listen-response
- - Lesson 4: l4-build-response
+ - Lesson 1: branch [l1-setup-quick-sandbox](https://github.com/coder-forge/ajax-autocomplete/tree/l1-setup-quick-sandbox)
+ - Lesson 2: branch [l2-listen-request](https://github.com/coder-forge/ajax-autocomplete/tree/l2-build-event-listeners)
+ - Lesson 3: branch l3-listen-response
+ - Lesson 4: branch l4-build-response
 
 ## Requirements
 
