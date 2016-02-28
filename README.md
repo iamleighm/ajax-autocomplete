@@ -94,14 +94,10 @@ $ git checkout -b l3-listen-response
     var jsonObj = JSON.parse(file)
 
     res.json({
-      "results": JSON.parse(json)
+      "results": jsonObj
     })
   })
   ...
   ```
 
-4. send request
-
-5. create html elements
-6. populate results
-7. update page
+See the completed file here: [app/routes/root.js](https://github.com/coder-forge/ajax-autocomplete/blob/l3-listen-response/app/routes/root.js)
