@@ -3,38 +3,31 @@ var express = require('express'),
   router    = express.Router(),
   sanitize  = require('mongo-sanitize')
 
-/* GET home page. */
+// GET home page.
 router.get('/', function getIndexCallback(req, res, next) {
 
   // render a jade file from views/ folder, in this case index.jade
   res.render('index', { title: 'Coder Forge - Ajax Autocomplete' });
 });
 
-
-/* GET json results */
+// GET json results.
 router.get('/getResults', function resultsRouteCallback(req, res, next){
 
+  // vars
+  var query = sanitize(req.body.query)                                          // sanitize user provided input (remove possibility of user inputed code)
+    ,fileLocation   = __dirname + '/../public/sample.json'                      // the location of the json file
 
-  // 1. clean user generated input
-  var query = sanitize(req.body.query)
-    ,fileLocation   = __dirname + '/../public/sample.json'
+  // mock database request with file system request
+  fs.readFile(fileLocation, function readFileCallback(err, file){               // read the file.
+    if(err) return next(err)                                                    // if error pass back to expressJS.
 
+    var jsonObj = JSON.parse(file)                                              // parse file contents as JSON object.
 
-  // 2. Mock querying the database, instead we will use the filesystem module
-  // fs to get the json file
-  // fs.readFile( string file-location, function callback )
-  fs.readFile(fileLocation, function readFileCallback(err, file){
-    if(err) return next(err)
-
-    // 3. parse file as json object
-    var jsonObj = JSON.parse(file)
-
-    // 4. Send results
-    res.json({
-      "results": JSON.parse(json)
+    res.json({                                                                  // send json results to client.
+      "results": jsonObj
     })
-  })
 
+  })
 })
 
 module.exports = router;
