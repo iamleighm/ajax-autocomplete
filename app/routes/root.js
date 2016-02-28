@@ -9,13 +9,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Coder Forge - Ajax Autocomplete' });
 });
 
-
-/* GET json */
-router.get('/getResults', function resultsRouteCallback(req, res, next){
-
-  res.json({
-    status: "ok"
-  })
-})
-
 module.exports = router;
