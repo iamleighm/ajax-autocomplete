@@ -3,7 +3,7 @@ var express = require('express'),
   router    = express.Router()
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/', function getIndexCallback(req, res, next) {
 
   // render a jade file from views/ folder, in this case index.jade
   res.render('index', { title: 'Coder Forge - Ajax Autocomplete' });
