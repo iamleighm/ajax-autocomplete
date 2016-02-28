@@ -10,4 +10,7 @@ $ git clone https://github.com/coder-forge/ajax-autocomplete
 $ cd ajax-autocomplete
 ```
 
-# 2 - 
+# 2 -
+```bash
+$ npm install --save mongo-sanitize
+```
