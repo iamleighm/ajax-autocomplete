@@ -11,6 +11,7 @@ $(document).ready(function documentIsReadyCallback(){
 
     // send value to server
     // $.get( string url, object params, function callback )
+    // $ sign represents the jQuery object
     $.get(
       '/sample.json',                                                           // the target endpoing
       {
