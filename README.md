@@ -8,6 +8,7 @@ Lessons are split into branches
  - Lesson 2: branch [l2-listen-and-request](https://github.com/coder-forge/ajax-autocomplete/tree/l2-listen-and-request)
  - Lesson 3: branch [l3-listen-response](https://github.com/coder-forge/ajax-autocomplete/tree/l3-listen-response)
  - Lesson 4: branch [l4-build-response](https://github.com/coder-forge/ajax-autocomplete/tree/l4-build-response)
+  - Lesson 4: branch [l4-build-response](https://github.com/coder-forge/ajax-autocomplete/tree/l4-build-response)
 
 ## Requirements
 
