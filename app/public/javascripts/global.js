@@ -7,7 +7,7 @@ $(document).ready(function documentIsReadyCallback(){
 
     // create nice var for input#searchBox
     var $el = $(this),                                                          // $(this) represnets the element the event happend to, in this case input#searchBox
-      val = $(this).val();                                                      // get the inputs val
+      val = $el.val();                                                      // get the inputs val
 
     // send value to server
     // $.get( string url, object params, function callback )
