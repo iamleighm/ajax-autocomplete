@@ -12,10 +12,6 @@
     "debug": "~2.2.0",
     "express": "~4.13.1",
     "jade": "~1.11.0",
-<<<<<<< HEAD
-    "mongo-sanitize": "^1.0.0",
-=======
->>>>>>> dc3d11b7bfa4f21d24daa6b20e938feeb1a9f3a4
     "morgan": "~1.6.1",
     "nodemon": "^1.9.0"
   }

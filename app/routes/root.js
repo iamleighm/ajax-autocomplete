@@ -1,23 +1,15 @@
 var express = require('express'),
   fs        = require('fs'),
-<<<<<<< HEAD
   router    = express.Router(),
   sanitize  = require('mongo-sanitize')
 
 // GET home page.
 router.get('/', function getIndexCallback(req, res, next) {
-=======
-  router    = express.Router()
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
->>>>>>> dc3d11b7bfa4f21d24daa6b20e938feeb1a9f3a4
 
   // render a jade file from views/ folder, in this case index.jade
   res.render('index', { title: 'Coder Forge - Ajax Autocomplete' });
 });
 
-<<<<<<< HEAD
 // GET json results.
 router.get('/getResults', function resultsRouteCallback(req, res, next){
 
@@ -35,14 +27,6 @@ router.get('/getResults', function resultsRouteCallback(req, res, next){
       "results": jsonObj
     })
 
-=======
-
-/* GET json */
-router.get('/getResults', function resultsRouteCallback(req, res, next){
-
-  res.json({
-    status: "ok"
->>>>>>> dc3d11b7bfa4f21d24daa6b20e938feeb1a9f3a4
   })
 })
 
